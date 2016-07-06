@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主营业务</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+        $(tab_conbox).find("li").hide();
+        $(tabtit).find("li:first").addClass("thistab").show(); 
+        $(tab_conbox).find("li:first").show();
+    
+        $(tabtit).find("li").bind(shijian,function(){
+          $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+            var activeindex = $(tabtit).find("li").index(this);
+            $(tab_conbox).children().eq(activeindex).show().siblings().hide();
+            return false;
+        });
+    
+    };
+    /*调用方法如下：*/
+    $.jqtab("#tabs","#tab_conbox","click");
+    
+    $.jqtab("#tabs2","#tab_conbox2","mouseenter");
+    
+});
+</script>
+</head>
+
+<body>
+ <div class="main-box">
+    <div class="ny-top">
+        <a href="index.html"><div class="top-logo"></div></a>
+        <div class="ny-nav">
+            <ul>
+                <li><a href="aboutus-culture.html">关于我们</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="zyyw-crm.html">主营业务</a></li>
+                <li><a href="#">商务服务</a></li>
+                <li><a href="investor-stock.html">投资者关系</a></li>
+                <li><a href="talent-development.html">人才发展</a></li>
+                <li><a href="contactus.html">交流中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="aboutus-banner"></div>
+    <div class="aboutus-business-title">
+         <ul>
+            <li><a href="aboutus-introduction.html">企业概况</a></li>
+            <li><a href="aboutus-culture.html">企业文化</a></li>
+            <li><a href="#">管理之道</a></li>
+            <li><a href="aboutus-movie.html">视频中心</a></li>
+        </ul>
+    </div>
+    <div class="aboutus-culture">
+        <font>公司一直秉承“经营风险、管理风险”的经营理念，立足国情，建立起了灵活多样且符合国际惯例的“信贷工厂”审批模式，为全国众多的企业提供卓越、高效的融资担保服务。
+凭借雄厚、持续的资本扩张能力；强大的风险审核、过滤和管理体系；优质的服务和良好的口碑，公司已与中建三局、中铁十二局等全国范围内愈百家特、一级企业建立战略合作关系；与万科、中粮地产等地产百强企业进行持续深度合作。</font>
+       <img src="images/about-culture.jpg">
+ 
+    </div>
+    <div class="culture-tab">
+         <div id="tabbox">    
+   <ul class="tabs" id="tabs2">
+       <li><a href="#">企业价值观</a></li>
+       <li><a href="#">企业宗旨</a></li>
+       <li><a href="#">企业精神</a></li>
+    </ul>
+    <ul class="tab_conbox" id="tab_conbox2">
+        <li class="tab_con">
+<span>诚实守信</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+携手共赢</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+客户至上</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会
+
+</span>
+        </li>
+            
+                <li class="tab_con">
+<span> w诚实守信</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+携手共赢</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+客户至上</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会
+
+</span>
+        </li>
+    
+            <li class="tab_con">
+<span>t诚实守信</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+携手共赢</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会</br>
+
+
+客户至上</br>
+诚实守信是大自然的核心价值和文化基石，是大自然人的崇高品质，我们倡导全面的诚信观，诚信于股东，客户，员工和社会
+
+</span>
+        </li>
+    </ul>    
+</div>
+    </div>
+
+
+    <div class="ny-bottom">
+        <div class="ny-bottom-main">
+            <div class="ny-bottom-up">
+               <ul>
+                     <li>
+                         <ul>
+                            <li class="f18"><a href="aboutus-culture.html">关于我们</a></li>
+                            <li><a href="aboutus-introduction.html">企业简介</a></li>
+                            <li><a href="aboutus-culture.html">企业文化</a></li>
+                            <li><a href="#">管理之道</a></li>
+                            <li><a href="#">中央空调</a></li>
+                            <li><a href="aboutus-movie.html">视频中心</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li class="f18"><a href="news.html">新闻中心</a></li>
+                            <li><a href="news.html">集团动态</a></li>
+                            <li><a href="news.html">业务动态</a></li>
+                            <li><a href="news.html">行业资讯</a></li>
+                            <li><a href="news.html">媒体焦点</a></li>
+                            <li><a href="news.html">通知公告介</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li class="f18"><a href="zyyw-crm.html">主营业务</a></li>
+                            <li><a href="zyyw-crm.html">产品1</a></li>
+                            <li><a href="zyyw-crm.html">业务动态</a></li>
+                            <li><a href="zyyw-crm.html">行业资讯</a></li>
+                            <li><a href="zyyw-crm.html">媒体焦点</a></li>
+                            <li><a href="zyyw-crm.html">通知公告</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li class="f18"><a href="contactus.html">联系我们</a></li>
+                            <li><a href="contactus.html">联系地址</a></li>
+                            <li><a href="contactus.html">在线留言</a></li>
+                         </ul>
+                     </li>
+                </ul>
+            </div>
+            <div class="ny-bottom-down">
+                .免责申明&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.友情链接&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.网站地图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  通讯录服务热线：400-080-9180</br>
+                 2015 CORPORATION All Rights Reserved 赣ICP备05005225号
+            </div>
+        </div>
+    </div>
+
+
+</div>                     
+</body>
+</html>
